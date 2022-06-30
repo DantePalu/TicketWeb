@@ -1,0 +1,45 @@
+h1 {
+  color: #380f0f;
+  margin: 40px;
+  font-family: fantasy; }
+
+.velez {
+  width: 350px;
+  height: 350px; }
+
+.tabla {
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly; }
+
+table {
+  background-color: white;
+  border: solid 1px black;
+  border-collapse: collapse; }
+  table th {
+    padding: 5px;
+    border: solid 1px black;
+    border-collapse: collapse;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  table td {
+    padding: 5px;
+    border: solid 1px black;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif; }
+
+.contboton {
+  margin: 20px;
+  display: flex;
+  justify-content: center; }
+
+.botonCompra:hover, .botonvolver:hover {
+  color: #4e4848;
+  transition: 1s; }
+
+.botonCompra, .botonvolver {
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  background-color: #399c9c;
+  font-size: 20px;
+  border-radius: 5px; }

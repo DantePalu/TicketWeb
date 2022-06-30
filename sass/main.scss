@@ -1,0 +1,65 @@
+$bgtable:white;
+
+@mixin size {
+    width: 350px;
+    height: 350px;
+}
+$estilos:(
+    color: rgb(56, 15, 15),
+    margin: 40px,
+    fontF: fantasy
+);
+h1{
+    color: map-get($map: $estilos, $key:color);
+    margin: map-get($map: $estilos, $key:margin );  
+    font-family: map-get($map: $estilos, $key:fontF );  
+}
+
+
+.velez{
+    @include size();
+}
+
+.tabla{
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+table{
+    background-color: $bgtable;
+    border: solid 1px black;
+    border-collapse: collapse;
+        th{
+            padding: 5px;
+            border: solid 1px black;
+            border-collapse: collapse;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+            td{
+                padding: 5px;
+                border: solid 1px black;
+                border-collapse: collapse;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+}
+.contboton{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.botonCompra:hover{
+    color: rgb(78, 72, 72);
+    transition: 1s;
+}
+.botonCompra{
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(57, 156, 156);
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.botonvolver{
+    @extend .botonCompra
+}
